@@ -95,7 +95,10 @@
   ol {
     list-style-type: lower-roman;
   }
-  li a:visited {
+  .heading li a {
+    color: #000000;
+  }
+  .heading li a:visited {
     color: #ffb347;
   }
   .heading li a:hover {
