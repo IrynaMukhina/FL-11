@@ -6,7 +6,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-  border-bottom-right-radius: 500px 300px; }
+  border-bottom-right-radius: 600px 300px; }
   .header .header-wrap {
     margin: 0 auto;
     width: 90%;
@@ -121,11 +121,16 @@ body {
         margin: 10px 0 0 0;
         color: #ffffff;
         font-size: 20px;
-        display: inline; }
+        z-index: 1;
+        position: relative;
+        display: inline-block; }
         .section .section_card_wrap .section_card .section_card_heading .section_card_underline {
-          width: inherit;
+          width: 100%;
           background-color: #14a0c7;
-          height: 12px; }
+          height: 12px;
+          z-index: -1;
+          position: absolute;
+          bottom: -2px; }
       .section .section_card_wrap .section_card .section_card_text {
         font-family: "Hind", sans-serif;
         color: #ffffff;
