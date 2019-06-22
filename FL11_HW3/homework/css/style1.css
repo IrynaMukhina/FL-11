@@ -1,0 +1,234 @@
+body {
+  margin: 0; }
+
+.header {
+  background: url("../img/m-h-day.jpg") no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center; }
+  .header .header-wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .header .header-wrap .landing-logo {
+      margin-top: 20px;
+      display: flex;
+      width: 12%;
+      justify-content: space-between;
+      align-items: center; }
+      .header .header-wrap .landing-logo img {
+        width: 35%; }
+      .header .header-wrap .landing-logo p {
+        font-family: "Hind", sans-serif;
+        color: #2c2f3c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1; }
+        .header .header-wrap .landing-logo p span {
+          font-size: 12px; }
+    .header .header-wrap .header_heading {
+      font-family: "Source Sans Pro", sans-serif;
+      color: #2c2f3c;
+      font-weight: 800;
+      margin: 50px 0 50px 0;
+      width: 40%;
+      font-size: 62px;
+      position: relative;
+      z-index: 1;
+      line-height: 1; }
+      .header .header-wrap .header_heading::before {
+        content: '';
+        background-color: #14a0c7;
+        height: 20px;
+        width: 52%;
+        z-index: -1;
+        bottom: 5px;
+        position: absolute; }
+    .header .header-wrap .header_text {
+      font-family: "Hind", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0.7;
+      color: #2c2f3c;
+      width: 50%;
+      margin: 0; }
+    .header .header-wrap .header_button {
+      margin-top: 50px;
+      font-family: "Hind", sans-serif;
+      background-color: #699900;
+      border: none;
+      border-radius: 2px;
+      color: #ffffff;
+      padding: 10px 45px 10px 45px;
+      font-size: 14px;
+      font-weight: 600; }
+      .header .header-wrap .header_button:hover {
+        cursor: pointer;
+        background-color: #afff00; }
+      .header .header-wrap .header_button:focus {
+        outline: 0; }
+
+.section {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section .section_text {
+    font-family: "Source Sans Pro", sans-serif;
+    color: #2c2f3c;
+    font-weight: 800;
+    margin: 20px 0 20px 0;
+    width: 380px;
+    font-size: 32px;
+    position: relative;
+    z-index: 1; }
+    .section .section_text::before {
+      content: '';
+      background-color: #14a0c7;
+      height: 12px;
+      width: 40%;
+      z-index: -1;
+      bottom: 5px;
+      right: 60px;
+      position: absolute; }
+  .section .section_card_wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between; }
+    .section .section_card_wrap .section_card {
+      background-color: #21232e;
+      padding: 15px;
+      color: #ffffff;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .section .section_card_wrap .section_card .section_card_img {
+        width: 100%; }
+      .section .section_card_wrap .section_card .section_card_heading {
+        font-family: "Source Sans Pro", sans-serif;
+        color: #2c2f3c;
+        font-weight: 800;
+        margin: 10px 0 0 0;
+        color: #ffffff;
+        font-size: 20px;
+        display: inline; }
+        .section .section_card_wrap .section_card .section_card_heading .section_card_underline {
+          width: inherit;
+          background-color: #14a0c7;
+          height: 12px; }
+      .section .section_card_wrap .section_card .section_card_text {
+        font-family: "Hind", sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.7;
+        text-align: center; }
+  .section .section_banner {
+    background: linear-gradient(to right, #65950e, #2e5dd4);
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-top: 50px;
+    top: 60px; }
+    .section .section_banner .section_banner_text_wrap {
+      padding-left: 60px;
+      width: 60%;
+      margin: 20px 0 20px 0; }
+      .section .section_banner .section_banner_text_wrap .section_banner_heading {
+        font-family: "Source Sans Pro", sans-serif;
+        color: #2c2f3c;
+        font-weight: 800;
+        font-size: 24px;
+        margin: 0;
+        position: relative;
+        z-index: 1; }
+        .section .section_banner .section_banner_text_wrap .section_banner_heading::before {
+          content: '';
+          background-color: #14a0c7;
+          height: 12px;
+          width: 10%;
+          z-index: -1;
+          bottom: 3px;
+          right: 360px;
+          position: absolute; }
+      .section .section_banner .section_banner_text_wrap .section_banner_text {
+        font-family: "Hind", sans-serif;
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 1.5;
+        opacity: 0.7; }
+    .section .section_banner .section_banner_button {
+      font-family: "Hind", sans-serif;
+      background-color: #699900;
+      border: none;
+      border-radius: 2px;
+      color: #ffffff;
+      padding: 10px 45px 10px 45px;
+      font-size: 14px;
+      font-weight: 600;
+      margin: 0 auto; }
+      .section .section_banner .section_banner_button:hover {
+        cursor: pointer;
+        background-color: #afff00; }
+      .section .section_banner .section_banner_button:focus {
+        outline: 0; }
+
+.footer {
+  background-color: #21232e;
+  padding-top: 100px; }
+  .footer .footer-wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .footer .footer-wrap .footer_logo {
+      margin-top: 20px;
+      display: flex;
+      width: 12%;
+      justify-content: space-between;
+      align-items: center; }
+      .footer .footer-wrap .footer_logo img {
+        width: 35%; }
+      .footer .footer-wrap .footer_logo p {
+        font-family: "Hind", sans-serif;
+        color: #2c2f3c;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1; }
+        .footer .footer-wrap .footer_logo p span {
+          font-size: 12px; }
+      .footer .footer-wrap .footer_logo p {
+        color: #ffffff;
+        opacity: 0.7; }
+    .footer .footer-wrap .footer_text {
+      width: 25%;
+      font-family: "Hind", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0.7;
+      display: inline; }
+    .footer .footer-wrap .footer-cr {
+      font-family: "Hind", sans-serif;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0.7;
+      display: inline; }

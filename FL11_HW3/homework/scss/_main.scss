@@ -1,0 +1,236 @@
+@mixin headerFontStyle {
+  font-family: $headerFontFamily;
+  color: $headerTextColor;
+  font-weight: 800;
+}
+@mixin textFontStyle {
+  font-family: $textFontFamily;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+@mixin joinButton {
+  font-family: $textFontFamily;
+  background-color: $buttonColor;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 10px 45px 10px 45px;
+  font-size: 14px;
+  font-weight: 600;
+  &:hover {
+    cursor: pointer;
+    background-color: $hoverButtonColor;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+@mixin logo {
+  margin-top: 20px;
+  display: flex;
+  width: 12%;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    width: 35%;
+  }
+  p {
+    font-family: $textFontFamily;
+    color: $headerTextColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1;
+    span {
+      font-size: 12px;
+    }
+  }
+}
+body {
+  margin: 0;
+}
+.header {
+  background: $backgroundImage no-repeat;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  .header-wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .landing-logo {
+      @include logo;
+    }
+    .header_heading {
+      @include headerFontStyle;
+      margin: 50px 0 50px 0;
+      width: 40%;
+      font-size: 62px;
+      position: relative;
+      z-index: 1;
+      line-height: 1;
+      &::before {
+        content: '';
+        background-color: $textLineColor;
+        height: 20px;
+        width: 52%;
+        z-index: -1;
+        bottom: 5px;
+        position: absolute;
+      }
+    }
+    .header_text {
+      @include textFontStyle;
+      color: $headerTextColor;
+      width: 50%;
+      margin: 0;
+    }
+    .header_button {
+      margin-top: 50px;
+      @include joinButton;
+    }
+  }
+  // &::before {
+  //   content: '';
+  //   border-bottom: 200px solid $mainBackgroundColor;
+  //   border-left: 350px solid transparent;
+  //   position: absolute;
+  // }
+}
+.section {
+  background-color: $mainBackgroundColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .section_text {
+    @include headerFontStyle;
+    margin: 20px 0 20px 0;
+    width: 380px;
+    font-size: 32px;
+    position: relative;
+    z-index: 1;
+    &::before {
+      content: '';
+      background-color: $textLineColor;
+      height: 12px;
+      width: 40%;
+      z-index: -1;
+      bottom: 5px;
+      right: 60px;
+      position: absolute;
+    }
+  }
+  .section_card_wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    .section_card {
+      background-color: $cardBackgroundColor;
+      padding: 15px;
+      color: #ffffff;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .section_card_img {
+        width: 100%;
+      }
+      .section_card_heading {
+        @include headerFontStyle;
+        margin: 10px 0 0 0;
+        color: #ffffff;
+        font-size: 20px;
+        //z-index: 1;
+        //position: relative;
+        display: inline;
+        .section_card_underline {
+          width: inherit;
+          background-color: $textLineColor;
+          height: 12px;
+          //z-index: -1;
+          //position: absolute;
+        }
+      }
+      .section_card_text {
+        @include textFontStyle;
+        text-align: center;
+      }
+    }
+  }
+  .section_banner {
+    background: $banerGradientColor;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    margin-top: 50px;
+    top: 60px;
+    .section_banner_text_wrap {
+      padding-left: 60px;
+      width: 60%;
+      margin: 20px 0 20px 0;
+      .section_banner_heading {
+        @include headerFontStyle;
+        font-size: 24px;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: '';
+          background-color: $textLineColor;
+          height: 12px;
+          width: 10%;
+          z-index: -1;
+          bottom: 3px;
+          right: 360px;
+          position: absolute;
+        }
+      }
+      .section_banner_text {
+        @include textFontStyle;
+      }
+    }
+    .section_banner_button {
+      @include joinButton;
+      margin: 0 auto;
+    }
+  }
+}
+.footer {
+  background-color: $footerBackgroundColor;
+  padding-top: 100px;
+  .footer-wrap {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .footer_logo {
+      @include logo;
+      p {
+        color: #ffffff;
+        opacity: 0.7;
+      }
+    }
+    .footer_text {
+      width: 25%;
+      @include textFontStyle;
+      display: inline;
+    }
+    .footer-cr {
+      @include textFontStyle;
+      display: inline;
+    }
+  }
+  
+}
