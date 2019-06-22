@@ -1,5 +1,6 @@
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #21232e; }
 
 .header {
   background: url("../img/m-h-night.jpg") no-repeat;
@@ -16,11 +17,11 @@ body {
     .header .header-wrap .landing-logo {
       margin-top: 20px;
       display: flex;
-      width: 12%;
+      width: 10%;
       justify-content: space-between;
       align-items: center; }
       .header .header-wrap .landing-logo img {
-        width: 35%; }
+        width: 45%; }
       .header .header-wrap .landing-logo p {
         font-family: "Fresca", sans-serif;
         color: #ffffff;
@@ -203,11 +204,11 @@ body {
     .footer .footer-wrap .footer_logo {
       margin-top: 20px;
       display: flex;
-      width: 12%;
+      width: 10%;
       justify-content: space-between;
       align-items: center; }
       .footer .footer-wrap .footer_logo img {
-        width: 35%; }
+        width: 45%; }
       .footer .footer-wrap .footer_logo p {
         font-family: "Fresca", sans-serif;
         color: #ffffff;

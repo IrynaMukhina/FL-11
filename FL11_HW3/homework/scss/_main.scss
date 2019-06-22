@@ -30,11 +30,11 @@
 @mixin logo {
   margin-top: 20px;
   display: flex;
-  width: 12%;
+  width: 10%;
   justify-content: space-between;
   align-items: center;
   img {
-    width: 35%;
+    width: 45%;
   }
   p {
     font-family: $textFontFamily;
@@ -53,6 +53,7 @@
 }
 body {
   margin: 0;
+  background-color: $mainBackgroundColor;
 }
 .header {
   background: $backgroundImage no-repeat;
