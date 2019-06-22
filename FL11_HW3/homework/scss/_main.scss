@@ -59,6 +59,7 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
+  border-bottom-right-radius: 500px 300px;
   .header-wrap {
     margin: 0 auto;
     width: 90%;
@@ -97,12 +98,6 @@ body {
       @include joinButton;
     }
   }
-  // &::before {
-  //   content: '';
-  //   border-bottom: 200px solid $mainBackgroundColor;
-  //   border-left: 350px solid transparent;
-  //   position: absolute;
-  // }
 }
 .section {
   background-color: $mainBackgroundColor;

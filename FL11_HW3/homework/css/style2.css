@@ -5,7 +5,8 @@ body {
   background: url("../img/m-h-night.jpg") no-repeat;
   height: 100vh;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  border-bottom-right-radius: 500px 300px; }
   .header .header-wrap {
     margin: 0 auto;
     width: 90%;
