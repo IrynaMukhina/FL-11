@@ -1,11 +1,13 @@
 $backgroundImage: url('../img/m-h-day.jpg');
-$mainBackgroundColor: #ffffff;
 $headerTextColor: #2c2f3c;
 $buttonColor: #699900;
 $textLineColor: #14a0c7;
-$cardBackgroundColor: #21232e;
-$footerBackgroundColor: #21232e;
 $headerFontFamily: 'Source Sans Pro', sans-serif;
 $textFontFamily: 'Hind', sans-serif;
 $banerGradientColor: linear-gradient(to right, #65950e , #2e5dd4);
 $hoverButtonColor: lighten( $buttonColor, 20% );
+$backgroundColors: (
+    main: #ffffff,
+    card: #21232e,
+    footer: #21232e
+);

@@ -1,11 +1,13 @@
 $backgroundImage: url("../img/m-h-night.jpg");
-$mainBackgroundColor: #21232e;
 $headerTextColor: #ffffff;
 $buttonColor: #e3ac00;
 $textLineColor: #ff4e33;
-$cardBackgroundColor: #3b3f50;
-$footerBackgroundColor: #3b3f50;
 $headerFontFamily: 'Source Sans Pro', sans-serif;
 $textFontFamily: 'Fresca', sans-serif;
 $banerGradientColor: linear-gradient(to right, #dea405 , #942e51);
 $hoverButtonColor: lighten( $buttonColor, 20% );
+$backgroundColors: (
+    main: #21232e,
+    card: #3b3f50,
+    footer: #3b3f50
+);

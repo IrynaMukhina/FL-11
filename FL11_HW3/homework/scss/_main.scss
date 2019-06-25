@@ -51,9 +51,10 @@
     }
   }
 }
+
 body {
   margin: 0;
-  background-color: $mainBackgroundColor;
+  background-color: map-get($backgroundColors, main);
 }
 .header {
   background: $backgroundImage no-repeat;
@@ -101,7 +102,7 @@ body {
   }
 }
 .section {
-  background-color: $mainBackgroundColor;
+  background-color: map-get($backgroundColors, main);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -129,7 +130,7 @@ body {
     display: flex;
     justify-content: space-between;
     .section_card {
-      background-color: $cardBackgroundColor;
+      background-color: map-get($backgroundColors, card);
       padding: 15px;
       color: #ffffff;
       width: 30%;
@@ -189,7 +190,7 @@ body {
           width: 10%;
           z-index: -1;
           bottom: 3px;
-          right: 360px;
+          right: 355px;
           position: absolute;
         }
       }
@@ -204,7 +205,7 @@ body {
   }
 }
 .footer {
-  background-color: $footerBackgroundColor;
+  background-color: map-get($backgroundColors, footer);
   padding-top: 100px;
   .footer-wrap {
     margin: 0 auto;
