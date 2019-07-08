@@ -1,6 +1,8 @@
+const minEmailLength = 6;
+const minPasswordLength = 5;
 const userEmail = prompt(`Please enter your email`);
 if (userEmail) {
-	if (userEmail.length >= 6) {
+	if (userEmail.length >= minEmailLength) {
 		if (userEmail === `user@gmail.com` || userEmail === `admin@gmail.com`) {
 			let userPassword = prompt('Please enter your password');
 			if (userPassword) {
@@ -11,7 +13,7 @@ if (userEmail) {
 						const oldPassword = prompt(`Please enter your old password`);
 						if (userPassword === oldPassword) {
 							const newPassword = prompt(`Please enter a new password`);
-							if (newPassword.length >= 5) {
+							if (newPassword.length >= minPasswordLength) {
 								const repeatNewPassword = prompt(`Please repeat a new password`);
 								if (newPassword === repeatNewPassword) {
 									userPassword = newPassword;
