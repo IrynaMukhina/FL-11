@@ -8,10 +8,10 @@ function reverseNumber(num) {
 		const sign = Math.sign(num);
 		const numStr = String(num * sign);
 		for(let i = numStr.length - 1; i >= 0; i--) {
-		reverseNum += numStr[i];
-	}
+			reverseNum += numStr[i];
+		}
 
-	return Number(reverseNum) * sign;
+		return Number(reverseNum) * sign;
 	}
 }
 
