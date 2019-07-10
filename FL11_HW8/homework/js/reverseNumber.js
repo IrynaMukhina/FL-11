@@ -3,16 +3,16 @@ function isInteger(value) {
 }
 
 function reverseNumber(num) {
-	let reverseNum;
 	if (isInteger(num)) {
-		if (num >= 0) {
-			reverseNum = Number(String(num).split('').reverse('').join(''));
-		} else {
-			reverseNum = Number(String(num).split('').splice(1).reverse('').join('')) * -1;
-		}
+		let reverseNum = '';
+		const sign = Math.sign(num);
+		const numStr = String(num * sign);
+		for(let i = numStr.length - 1; i >= 0; i--) {
+		reverseNum += numStr[i];
 	}
 
-	return reverseNum;
+	return Number(reverseNum) * sign;
+	}
 }
 
 reverseNumber(123);
