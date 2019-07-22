@@ -20,8 +20,10 @@ function Fighter(prop) {
 		return gamer.health;
 	}
 	this.attack = function(opponent) {
-		const fail = 100 - this.getAgility();
-		const randomAttack = Math.random() * 100 + 1;
+		const hundred = 100;
+		const one = 1;
+		const fail = hundred - this.getAgility();
+		const randomAttack = Math.random() * hundred + one;
 		if(randomAttack > fail) {
 			opponent.dealDamage();
 			console.log(`${this.getName()} make ${this.getDamage()} to ${opponent.getName()}`);
